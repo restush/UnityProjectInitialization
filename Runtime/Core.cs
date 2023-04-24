@@ -18,9 +18,10 @@ namespace AmoyFeels.ProjectInitialization
 #if UNITASK_SUPPORT
         private static List<Func<UniTask>> _beforeInitializeTasks;
         private static List<Func<UniTask>> _afterInitializeTasks;
-#endif
+#else
         private static List<Func<System.Action>> _beforeInitializeActions;
         private static List<Func<System.Action>> _afterInitializeActions;
+#endif
         const string _coreConfigPath = "AmoyFeels/CoreConfig";
 
         [RuntimeInitializeOnLoadMethod()]
@@ -35,6 +36,9 @@ namespace AmoyFeels.ProjectInitialization
             Initialize();
 #endif
         }
+
+#if !UNITASK_SUPPORT
+
         public static void Initialize()
         {
             IOrderedEnumerable<Type> types = OrderExecution();
@@ -62,9 +66,12 @@ namespace AmoyFeels.ProjectInitialization
             {
                 postTask();
             }
+
         }
 
-#if UNITASK_SUPPORT
+
+
+#else
 
         public static async UniTask InitializeAsync()
         {

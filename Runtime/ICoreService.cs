@@ -8,11 +8,13 @@ namespace AmoyFeels.ProjectInitialization
     /// </summary>
     public interface ICoreService
     {
+#if !UNITASK_SUPPORT
+
         /// <summary>
         /// Use for after created an instance of Manager/Service script
         /// </summary>
         public void Initialize();
-#if UNITASK_SUPPORT
+#else
         /// <summary>
         /// Use for after created an instance of Manager/Service script
         /// </summary>
