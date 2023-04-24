@@ -1,0 +1,17 @@
+{
+  "name": "com.amoyfeels.unityprojectinitialization",
+  "version": "1.0.0",
+  "displayName": "Unity Project Initialization",
+  "description": "A generic way to initialize Managers that do not worry about its dependency. It's like scene-independent.",
+  "unity": "2018.4",
+  "unityRelease": "13f1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "keywords": [],
+  "author": {
+    "name": "Restu",
+    "email": "contact@amoyfeels.com",
+    "url": "https://www.amoyfeels.com"
+  }
+}

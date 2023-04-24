@@ -1,0 +1,18 @@
+{
+    "name": "AmoyFeels.ProjectInitialization.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:32c362bf2fd77d345ae8ae7ccb250dcd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
